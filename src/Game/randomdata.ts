@@ -1,133 +1,80 @@
 export const Questions = [
   {
     id: Math.random(),
-    question: "Quantos Planetas fazem parte do nosso Sistema Solar?",
-    correctAnswer: "8",
+    question: "Marque a alternativa CORRETA que descreve as etapas pré-analítica, analítica e pós-analítica respectivamente.",
+    correctAnswer: "Coleta da amostra, realização do exame e cálculo dos resultados.",
     wrongAnswers: [
-      "10",
-      "5",
-      "9"
+      "Jejum do paciente, liberação dos laudos e preparo do paciente.",
+      "Realização do exame, armazenamento da amostra e identificação da amostra.",
+      "Orientação do paciente, cálculo dos resultados e transporte da amostra."
+    ]
+  },
+  {
+    id: Math.random(),
+    question: "A Norma Regulatória 9 (NR9) define riscos ambientais existentes no ambiente de trabalho. São eles:",
+    correctAnswer: "Riscos químicos, Riscos físicos e Riscos biológicos, apenas.",
+    wrongAnswers: [
+      "Riscos ambientais, Riscos biológicos, Riscos físicos e Riscos ergonômicos.",
+      "Riscos químicos, Riscos físicos, Riscos biológicos, Riscos ergonômicos e Riscos de acidente.",
+      "Riscos ambientais, Riscos químicos, Riscos físicos, Riscos biológicos e Riscos ergonômicos.",
+      "Riscos ergonômicos e Riscos de acidente, apenas.",
+    ]
+  },
+  {
+    id: Math.random(),
+    question: "Entre as vantagens da manutenção preventiva nos equipamentos está o fato de",
+    correctAnswer: "poder ser programada, aumentar a confiabilidade do equipamento, aumentar a vida útil do equipamento.",
+    wrongAnswers: [
+      "diminuir a vida útil do equipamento.",
+      "diminuir a confiabilidade do equipamento.",
+      "aumentar o estoque de peças sobressalentes.",
+    ]
+  },
+  {
+    id: Math.random(),
+    question: "Com base nos procedimentos de laboratório e nas boas práticas de laboratório, é INCORRETO afirmar:",
+    correctAnswer: "Determinados reagentes ou produtos de reações podem ser descartados na pia do laboratório.",
+    wrongAnswers: [
+      "Em laboratórios, deve-se usar calçados fechados de couro ou similar.",
+      "Não se deve comer ou beber no laboratório.",
+      "Aventais de laboratório, luvas e óculos de proteção não devem ser usados fora do laboratório.",
+      "A capela de exaustão deve ser utilizada sempre que se trabalhar com solventes voláteis, com materiais tóxicos ou com reações perigosas, explosivas ou tóxicas.",
+    ]
+  },
+  {
+    id: Math.random(),
+    question: "Entre as condutas de boas práticas em laboratório está a seguinte:",
+    correctAnswer: "utilizar sempre sapatos fechados, calças compridas e jalecos de manga longa.",
+    wrongAnswers: [
+      "devido ao grande risco de acidentes que pode causar, assim que utilizar uma agulha de seringa em um procedimento, lembrar-se de encapá-la antes de descartar no lixo comum.",
+      "ao diluir uma solução ácida, sempre adicionar água sobre a solução concentrada do ácido, evitando assim que ele espirre.",
+      "somente pipetar com a boca soluções que se tenha a segurança que não fazem mal à saúde.",
+      "o uso de luvas torna desnecessária a lavagem das mãos.",
+    ]
+  },
+  {
+    id: Math.random(),
+    question: "Com o intuito de se garantir a aplicação dos princípios das boas práticas de laboratório (BPL), um dos instrumentos utilizados nos laboratórios são os Procedimentos Operacionais Padrão (POP). O POP",
+    correctAnswer: "garante aos usuários serviços ou produtos livres de variações indesejáveis, independentemente de quem as realize.",
+    wrongAnswers: [
+      "é um documento que expressa o planejamento do trabalho com vistas a padronizar e permitir a obtenção de certificados de qualidade, como a ISO 9001.",
+      "minimiza a ocorrência de desvios na execução das atividades no laboratório, auxiliando na interpretação do resultado final e permitindo a identificação das variáveis no caso de dúvidas de interpretação.",
+      "restringe-se ao preparo de soluções e leitura de resultados de exames, não se aplicando à utilização de equipamentos.",
+      "garante a mesma qualidade em todas as etapas do processo em qualquer momento, indicando as melhores marcas de reagentes e a maneira correta de mantê-los.",
+    ]
+  },
+  {
+    id: Math.random(),
+    question: "Na realização de exames de sangue, é necessário separar os elementos celulares do plasma. Esse processo pode ser realizado através",
+    correctAnswer: "do aquecimento.",
+    wrongAnswers: [
+      "de precipitação.",
+      "do resfriamento.",
+      "de agitação.",
+      "da centrifugação.",
     ]
   },
 
-  {
-    id: Math.random(),
-    question: "1 dia equivalem a ...",
-    correctAnswer: "86400s",
-    wrongAnswers: [
-      "1441m",
-      "90000s",
-      "86500s"
-    ]
-  },
-
-  {
-    id: Math.random(),
-    question: "De quantas formas diferentes podemos organizar 5 alunos numa fila?",
-    correctAnswer: "120 formas",
-    wrongAnswers: [
-      "50 formas",
-      "100 formas",
-      "140 formas"
-    ]
-  },
-  
-  {
-    id: Math.random(),
-    question: "Qual e a forca da gravidade na Terra?",
-    correctAnswer: "9.8m/s2",
-    wrongAnswers: [
-      "9.8m/s",
-      "8.9m/s",
-      "10m/s2"
-    ]
-  },
-  {
-    id: Math.random(),
-    question: "Em que ano o Homem pisou na lua?",
-    correctAnswer: "1960",
-    wrongAnswers: [
-      "2000",
-      "1965",
-      "1980"
-    ]
-  },
-  {
-    id: Math.random(),
-    question: "De quem é a famosa frase 'Penso, logo existo'?",
-    correctAnswer: "Descartes",
-    wrongAnswers: [
-      "Sócrates",
-      "Galileu",
-      "Platão"
-    ]
-  },
-  
-  {
-    id: Math.random(),
-    question: "Qual é o pais asiático cuja lingua oficial é Portugues?",
-    correctAnswer: "Macau",
-    wrongAnswers: [
-      "Cazaquistão",
-      "Malásia",
-      "Moçambique"
-    ]
-  },
-  
-  {
-    id: Math.random(),
-    question: "Quantas lampadas são vendidas na china por dia?",
-    correctAnswer: "vai se f*der! 😎",
-    wrongAnswers: [
-      "500000",
-      "10000",
-      "Infinitas"
-    ]
-  },
-  
-  {
-    id: Math.random(),
-    question: "Quais o menor e o maior pais do mundo?",
-    correctAnswer: "Vaticano e Russia",
-    wrongAnswers: [
-      "Brasil e E.U.A",
-      "Angola e Reino Unido",
-      "Bélgica e Maurícias"
-    ]
-  },
-  
-  {
-    id: Math.random(),
-    question: "Quantas casas decimais tem o numero PI?",
-    correctAnswer: "Infinitas",
-    wrongAnswers: [
-      "Duas",
-      "Cem",
-      "Tres"
-    ]
-  },
-  
-  {
-    id: Math.random(),
-    question: "Atualmente, quantos elementos químicos a tabela periódica possui?",
-    correctAnswer: "118",
-    wrongAnswers: [
-      "53",
-      "164",
-      "97"
-    ]
-  },
-  
-  {
-    id: Math.random(),
-    question: "Quanto tempo a luz do Sol demora para chegar à Terra?",
-    correctAnswer: "8 minutos",
-    wrongAnswers: [
-      "1 segundo",
-      "1 dia",
-      "8 segundos"
-    ]
-  },
 ]
 
 export const topics = [

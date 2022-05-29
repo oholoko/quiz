@@ -73,7 +73,7 @@
     flex-wrap: wrap;
   }
   .answers > div {
-    flex: 50%;
+    flex: 100%;
     transform: scaleX(0.95);
   }
 }
