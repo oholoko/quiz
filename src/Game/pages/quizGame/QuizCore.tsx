@@ -12,13 +12,18 @@ const Quiz:React.FC = ():React.ReactElement => {
   return (
     <>
       {gameOver && (
-        <ShowResult />
+        
+        <div className='root'>
+          <ShowResult />
+        </div>
       )}
       
       {!gameOver && (
         <>
-          <Header />
-          <Question />
+          <div className='root'>
+            <Header />
+            <Question />
+          </div>
         </>
       )}
     </>

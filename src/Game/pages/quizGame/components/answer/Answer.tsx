@@ -11,7 +11,12 @@ interface AnswerProps {
 }
 
 const Answer:FC<AnswerProps> = ({answer, index, onSelectAnswer, selectedAnswer, correctAnswer, askedHelp}):ReactElement => {
-  
+  let audio = new Audio("https://www.pacdv.com/sounds/applause-sound/app-5.mp3")
+
+  const start = () => {
+    audio.play()
+  }
+
   const answerLetterMapping:Array<string> = ['A', 'B', 'C', 'D', 'E']
   const isCorrect = 
     selectedAnswer 
@@ -19,7 +24,7 @@ const Answer:FC<AnswerProps> = ({answer, index, onSelectAnswer, selectedAnswer, 
     correctAnswer 
       === 
     answer 
-    ? "correct-answer" 
+    ? "correct-answer"  
     : null
 
   const isWrong =
