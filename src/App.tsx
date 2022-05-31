@@ -15,12 +15,12 @@ const App:FC = ():ReactElement => {
       <UniversalProvider>
         <Routes>
           <Route
-            path="/topic"
+            path="/"
             element={<ChooseTopic />}
           >
           </Route>
             <Route
-              path="/"
+              path="/game"
               element={
                 <QuizProvider>
                   <QuizCore />

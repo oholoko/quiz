@@ -9,7 +9,8 @@ const Question:FC = ():ReactElement => {
   const quizContext = useContext(QuizContext);
   const success = require("../../../../sound/success.mp3")
   const failure = require("../../../../sound/failure.mp3")
-
+  const audioS = useRef(new Audio(success));
+  const audioF = useRef(new Audio(failure));
 
   const dispatch = quizContext?.dispatch
 
@@ -20,17 +21,23 @@ const Question:FC = ():ReactElement => {
   const helpChances = quizContext!.state.helpChances
   const askedHelp = quizContext?.state.askedHelp 
 
+  if (selectedAnswer == null)
+  {
+    audioS.current.pause()
+    audioS.current.load()
+    audioF.current.pause()
+    audioF.current.load()
+  }
+
   if (selectedAnswer)
   {
     if (selectedAnswer === correctAnswer)
     {
-      const rS = new Audio(success)
-      rS.play()
+      audioS.current.play()
     }
     else
     {
-      const rF = new Audio(failure)
-      rF.play()
+      audioF.current.play()
     }
   }
   
@@ -64,14 +71,6 @@ const Question:FC = ():ReactElement => {
         </div>
         
         <div className="action-btns-wrap">
-          
-          <div
-            className={`help-btn action-btn ${helpDisabled}`}
-            onClick={() => dispatch && dispatch({type:allowedActions.ASK_HELP, payload:null})}
-          >
-            <span className="action-btn-text"><p>Ajuda</p></span>
-            <span className="help-chances">{helpChances}</span>
-          </div>
 
           <div 
             className="next-btn action-btn"

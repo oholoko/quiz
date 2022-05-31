@@ -73,22 +73,11 @@ const Topics:FC = ():ReactElement => {
         <span className="welc-message">Hi, welcome to <strong>BrainQuiz</strong></span>
         <span className="welc-feeling">Are you feeling yourself Smart? choose a topic(s) to get started.</span>
       </div>  
-      
-      <div className="topics">
-        {
-          avalibleTopics.map((topic, index) => (
-            <SingleTopic 
-              topic={topic.topic} 
-              key={index}
-              onSelectTopic={topic => handleOnSelectTopic(topic)}
-            />
-          ))
-        } 
-      </div>
+      <img src={require('../../images/initial_image.jpeg')} width="100%" height="100%"/>
       <div className="actions-btns">
         <button 
-          className={`start-btn ${selectedTopicsCount > 0 ? null: "disabled-btn"}`}
-          onClick={() => navigate("/play")}
+          className={`start-btn true`}
+          onClick={() => navigate("/game")}
         >
           Start
         </button>
