@@ -70,8 +70,8 @@ const Topics:FC = ():ReactElement => {
   return (
     <div className="topics-wrap container">
       <div className="welcome-wrap">
-        <span className="welc-message">Hi, welcome to <strong>BrainQuiz</strong></span>
-        <span className="welc-feeling">Are you feeling yourself Smart? choose a topic(s) to get started.</span>
+        <span className="welc-message">Olá. Bem vindo ao <strong>Quiz Game</strong></span>
+        <span className="welc-feeling">Vamos Jogar?</span>
       </div>  
       <img src={require('../../images/initial_image.jpeg')} width="100%" height="100%"/>
       <div className="actions-btns">
