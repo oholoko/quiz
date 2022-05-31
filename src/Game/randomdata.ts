@@ -66,12 +66,12 @@ export const Questions = [
   {
     id: Math.random(),
     question: "Na realização de exames de sangue, é necessário separar os elementos celulares do plasma. Esse processo pode ser realizado através",
-    correctAnswer: "do aquecimento.",
+    correctAnswer: "da centrifugação.",
     wrongAnswers: [
       "de precipitação.",
       "do resfriamento.",
       "de agitação.",
-      "da centrifugação.",
+      "do aquecimento.",
     ]
   },
 
